@@ -1,16 +1,57 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<meta charset="UTF-8" />
+
+		<meta name="description" content="30 Days Of HTML challenge" />
+		<meta name="keywords" content="HTML, CSS, Web Development" />
+		<meta name="author" content="Ivonin Egor" />
+
 		<title>30 Days Of HTML</title>
+
+		<link rel="stylesheet" href="" />
+
+		<style>
+			.end-line{
+				width: 1000000px;
+				border-top: 2px solid black;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			.horizontal-line {
+				width: 700px;
+				border-top: 1px solid black;
+				margin-top: 20px;
+				margin-bottom: 20px;
+			}
+			.letter {
+				font-size: 100px;
+			}
+			#letter-h {
+				color: #e34c26;
+			}
+			#letter-t {
+				color: #264de4;
+			}
+			#letter-m {
+				color: #f0db4f;
+			}
+			#letter-l {
+				color: #61dbfb;
+			}
+		</style>
+		<script>
+			console.log('Welcome to 30 Days Of HTML')
+		</script>
 	</head>
 	<body>
 		<header>
-			<span style="color: red; font-size: 100px;">H</span>
-			<span style="color: blue; font-size: 100px;">T</span>
-			<span style="color: yellow; font-size: 100px;">M</span>
-			<span style="color: rgb(0, 153, 255); font-size: 100px;">L</span>
+			<span class="letter" id="letter-h">H</span>
+			<span class="letter" id="letter-t">T</span>
+			<span class="letter" id="letter-m">M</span>
+			<span class="letter" id="letter-l">L</span>
 		</header>
-		<main>
+		<main style="margin: 10px;">
 			<section>
 				<h1 id="first-title">The Building Blocks of the web</h1>
 				<article>
@@ -18,6 +59,7 @@
 						There is not website without HTML. Learn HTML and build websites and web applications 
 					</p>
 				</article>
+				<a href="https://github.com/Yukky887/30DaysOfHTML">30 Days Of HTML</a>
 			</section>
 
 			<section>
@@ -43,7 +85,7 @@
 					</pre>
 				</p>
 			</section>
-
+			<div class="horizontal-line"></div>
 			<section>
 				<h2>Front end Technologis</h2>
 				<ul>
@@ -69,8 +111,120 @@
      	        <img src ='./assets/images/css_logo.png' alt='CSS Logo'>
 			</section>
 			<button onclick="alert('Welcome to 30 DaysOfHTML')"> Click Me </button>
+			<div class="horizontal-line"></div>
 			<section>
-				<h1>Audios</h1>
+				<h2 class="section-title">Application Form</h2>
+				<article class="form-article">
+					<form class="contact-form">
+						<div class="form-group">
+							<label for="firstname">First Name</label>
+							<input type="text" id="firstname" placeholder="Your name" />
+						</div>
+						<div class="form-group">
+							<label for="lastname">Last Name</label>
+							<input type="text" id="lastname" placeholder="Your last name" />
+						</div>
+						<div class="form-group">
+							<label for="email">Email</label>
+							<input type="text" id="email" placeholder="Your email" />
+						</div>
+						<div class="form-group">
+							<label for="company">Company</label>
+							<input type="text" id="company" placeholder="Your company name" />
+						</div>
+						<div class="form-group">
+							<label for="age">Age</label>
+							<input type="number" id="age" placeholder="Your age" />
+						</div>
+						<div class="form-group">
+							<label for="date">Date Of Birth</label>
+							<input type="text" id="date" placeholder="Your date of birth" />
+						</div>
+						<div class="form-group">
+							<p>What are your skills</p>
+							<input type="checkbox" id="html" />
+							<label for="html">HTML</label>
+							<br/>
+							<input type="checkbox" id="css" />
+							<label for="css">CSS</label>
+							<br/>
+							<input type="checkbox" id="js" />
+							<label for="js">JS</label>
+							<br/>
+							<input type="checkbox" id="react" />
+							<label for="react">React</label>
+							<br/>
+							<input type="checkbox" id="redux" />
+							<label for="redux">Redux</label>
+						</div>
+						<div class="form-group">
+							<label for="color">Your favorite</label>
+							<input id="color" type="color" />
+						</div>
+						
+						<div class="form-group">
+							<p>Gender</p>
+							<input type="radio" id="female" name="gender" />
+							<label for="female">Female</label>
+							<br/>
+							<input type="radio" id="male" name="gender" />
+							<label for="male">Male</label>
+						</div>
+
+						<div class="form-group">
+							<p>Select your country</p>
+							<select name="country" id="country">
+								<option value="">-Country-</option>
+								<option value="Russia">Russia</option>
+								<option value="Finland">Finland</option>
+								<option value="Estonia">Estonia</option>
+								<option value="Sweden">Sweden</option>
+								<option value="Norway">Norway</option>
+								<option value="Denmark">Denmark</option>
+							</select>
+						</div>
+						<div class="form-group">
+							<p>Select your course</p>
+							<select name="course" id="course">
+								<option value="">-Select your course-</option>
+								<option value="html-css">Basis of HTML and CSS</option>
+								<option value="js">Modern JavaScript</option>
+								<option value="Python">Python</option>
+								<option value="react">React</option>
+								<option value="data-analysis">Data Analysis with Python</option>
+							</select>
+						</div>
+
+						<div class="form-group">
+							<label for="message">Leave your message here</label> <br/>
+							<textarea
+								cols="120"
+								rows="10"
+								id="message"
+								placeholder="Write your message here..."
+							></textarea>
+						</div>
+						<div class="form-group">
+							<input type="file" id="file-input" />
+							<label for="file-input"><i class="fas fa-upload"></i>Upload file</label>
+						</div>
+						<div>
+							<input type="file" id="agree" />
+							<label for="agree">
+								Be sure that all the information is yours and true.
+							</label>
+						</div>
+						<div>
+							<input type="submit" value="Submit"/>
+						</div>
+					</form>
+				</article>
+			</section>
+			
+			<div class="horizontal-line"></div>
+
+			<section>
+				<h2>Audios</h2>
 				<audio controls>
 					<source src="./assets/audio/audio_1.mp3" />
 				</audio>
@@ -81,6 +235,7 @@
 				<video src="./assets/video/js-project.mp4" style="width: 1000px;"></video>
 			</section>
 		</main>
+		<div class="end-line"></div>
 		<footer>
 			<small>Created by Yukky</small>
 			<ul>
